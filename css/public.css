@@ -1,0 +1,766 @@
+@charset 'utf-8';
+/*---阿里图标----*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_424201_aakev5tvwsotuik9.eot');
+  src: url('//at.alicdn.com/t/font_424201_aakev5tvwsotuik9.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_424201_aakev5tvwsotuik9.woff') format('woff'), url('//at.alicdn.com/t/font_424201_aakev5tvwsotuik9.ttf') format('truetype'), url('//at.alicdn.com/t/font_424201_aakev5tvwsotuik9.svg#iconfont') format('svg');
+  
+  /* project id 424201 */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*html5新标签兼容 ie678*/
+abbr,
+article,
+aside,
+audio,
+canvas,
+datalist,
+details,
+dialog,
+eventsource,
+figure,
+footer,
+header,
+hgroup,
+mark,
+menu,
+meter,
+nav,
+output,
+progress,
+section,
+time,
+video {
+  display: block;
+}
+/*------top顶部-------*/
+.topbar {
+  width: 100%;
+  height: 32px;
+  background-color: #fff;
+  border-bottom: 1px solid #cdcdcd;
+}
+.topbar .top {
+  width: 1200px;
+  height: 30px;
+  margin: 0 auto;
+  font-size: 12px;
+  background-color: #f7f7f8;
+}
+.topbar .top .topLeft {
+  width: 284px;
+  margin-left: 0;
+  height: 30px;
+  line-height: 30px;
+}
+.topbar .top .topLeft .top-register {
+  color: #e63638;
+  border-right: 1px solid #999;
+  padding-right: 3px;
+}
+.topbar .top .topLeft .top-register:hover {
+  color: #0f91ed;
+}
+.topbar .top .topLeft .top-login {
+  color: #000;
+  padding-left: 3px;
+}
+.topbar .top .topLeft .top-login:hover {
+  color: #0f91ed;
+}
+.topbar .top .topRight {
+  width: auto;
+  height: 30px;
+  position: relative;
+}
+.topbar .top .topRight ul li {
+  float: left;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+}
+.topbar .top .topRight ul li a {
+  display: block;
+  padding: 0 15px;
+  border-right: 1px solid #999;
+  color: #000;
+  line-height: 14px;
+  margin-top: 8px;
+}
+.topbar .top .topRight ul li a:hover {
+  color: #0f91ed;
+}
+.topbar .top .topRight ul li a.hasIcon:before {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.01px;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-weight: lighter;
+  padding-right: 5px;
+  vertical-align: bottom;
+}
+.topbar .top .topRight ul li a.cart:before {
+  content: "\e602";
+  color: #e63638;
+}
+.topbar .top .topRight ul li a.cart span {
+  color: #e63638;
+  font-weight: bold;
+  font-size: 12px;
+}
+.topbar .top .topRight ul li a.myAccount:before {
+  content: "\e619";
+  color: #0f91ed;
+}
+.topbar .top .topRight ul li.wapapp:hover .showEwm {
+  display: block;
+}
+.topbar .top .topRight ul li .showEwm {
+  display: none;
+  position: absolute;
+  top: 31px;
+  left: 0;
+  z-index: 9999;
+  width: 180px;
+  padding: 10px;
+  border: 1px solid #e4dde4;
+  background: #fff;
+  text-align: center;
+}
+.topbar .top .topRight ul li .showEwm img {
+  width: 150px;
+  height: 150px;
+}
+.topbar .top .topRight ul li .showEwm p {
+  height: 20px;
+  line-height: 20px;
+}
+body {
+  background: #f6f5f5;
+}
+.w1200 {
+  width: 1200px;
+  margin: 20px auto;
+}
+/*----header 头部------*/
+.header-wrap {
+  width: 100%;
+  height: 126px;
+  background: #fff;
+}
+.header-wrap .header {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header-wrap .header .headerLogo {
+  width: 345px;
+  height: 108px;
+  margin-top: 18px;
+}
+.header-wrap .header .headerSearch {
+  width: 575px;
+  height: 126px;
+  margin-left: 75px;
+  margin-right: 30px;
+}
+.header-wrap .header .headerSearch .headerSearchForm {
+  width: 100%;
+  height: 80px;
+  margin-top: 46px;
+}
+.header-wrap .header .headerSearch .headerSearchForm .searchBox .searchInput {
+  width: 430px;
+  height: 38px;
+  line-height: 38px;
+  border: 2px solid #0066cc;
+  outline: none;
+  padding-left: 5px;
+}
+.header-wrap .header .headerSearch .headerSearchForm .searchBox .searchBtn {
+  width: 95px;
+  height: 38px;
+  line-height: 38px;
+  background-color: #0066cc;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-align: center;
+}
+.header-wrap .header .headerSearch .headerSearchForm .searchBox .searchBtn span {
+  vertical-align: top;
+  font-size: 20px;
+}
+.header-wrap .header .headerSearch .headerSearchForm .searchBox datalist::-ms-expand {
+  display: none;
+}
+.header-wrap .header .headerSearch .headerSearchForm .searchBox .keywords li {
+  float: left;
+}
+.header-wrap .header .headerSearch .headerSearchForm .searchBox .keywords li a {
+  color: #000;
+  padding-right: 10px;
+}
+.header-wrap .header .headerSearch .headerSearchForm .searchBox .keywords li a:hover {
+  color: #0f91ed;
+}
+.header-wrap .header .hotLine {
+  width: 173px;
+  height: 126px;
+}
+.header-wrap .header .hotLine img {
+  display: block;
+  margin-top: 43px;
+}
+html5\:header {
+  display: block;
+}
+html5\:footer {
+  display: block;
+}
+html5\:aside {
+  display: block;
+}
+/*----nav  导航------*/
+.nav-wrap {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+}
+.nav-wrap .navbox {
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.nav-wrap .navbox .category-common {
+  width: 215px;
+  background: #004b91;
+  text-indent: 30px;
+}
+.nav-wrap .navbox .category-common h2 {
+  font-size: 17px;
+  font-weight: normal;
+}
+.nav-wrap .navbox .category-common h2 .iconfont {
+  font-size: 24px;
+  vertical-align: middle;
+}
+.nav-wrap .navbox .navigation {
+  margin-left: 20px;
+}
+.nav-wrap .navbox .navigation li {
+  float: left;
+  padding: 0 20px;
+}
+.nav-wrap .navbox .navigation li.active a,
+.nav-wrap .navbox .navigation li:hover a {
+  color: #004b97;
+}
+.nav-wrap .navbox .navigation li a {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+}
+.nav-wrap .navbox .buyfast {
+  width: 257px;
+  text-align: center;
+}
+.nav-wrap .navbox .buyfast p {
+  font-size: 14px;
+  font-weight: normal;
+}
+.nav-wrap .navbox .buyfast p span img {
+  vertical-align: middle;
+}
+.nav-wrap .navbox .subMenu {
+  width: 215px;
+  height: 450px;
+  position: absolute;
+  top: 42px;
+  top: 40px\9;
+  left: 0;
+  background: #187ddf;
+  color: #fff;
+  margin: 0;
+  padding-left: 0;
+  z-index: 999;
+}
+.nav-wrap .navbox .subMenu .menuList {
+  position: relative;
+}
+.nav-wrap .navbox .subMenu .menuList .item {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  /*--主分类--*/
+  /*---阿里图标---*/
+  /*----副分类---*/
+}
+.nav-wrap .navbox .subMenu .menuList .item:hover {
+  background: #fff;
+}
+.nav-wrap .navbox .subMenu .menuList .item:hover a.sup-item {
+  color: #0f91ed;
+  font-weight: 500;
+}
+.nav-wrap .navbox .subMenu .menuList .item:hover:before {
+  color: #0f91ed;
+  font-weight: 500;
+}
+.nav-wrap .navbox .subMenu .menuList .item a.sup-item {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 100;
+  display: inline-block;
+  width: 100%;
+  padding-left: 58px;
+}
+.nav-wrap .navbox .subMenu .menuList .item:before {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.01px;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: lighter;
+  padding-right: 5px;
+  vertical-align: bottom;
+  position: absolute;
+  left: 30px;
+}
+.nav-wrap .navbox .subMenu .menuList .item.item1:before {
+  content: "\e600";
+}
+.nav-wrap .navbox .subMenu .menuList .item.item2:before {
+  content: "\e6bc";
+}
+.nav-wrap .navbox .subMenu .menuList .item.item3:before {
+  content: "\e617";
+}
+.nav-wrap .navbox .subMenu .menuList .item.item4:before {
+  content: "\e67a";
+}
+.nav-wrap .navbox .subMenu .menuList .item.item5:before {
+  content: "\e67e";
+}
+.nav-wrap .navbox .subMenu .menuList .item.item6:before {
+  content: "\e70f";
+}
+.nav-wrap .navbox .subMenu .menuList .item.item7:before {
+  content: "\e61d";
+}
+.nav-wrap .navbox .subMenu .menuList .item.item8:before {
+  content: "\e61a";
+}
+.nav-wrap .navbox .subMenu .menuList .item.item9:before {
+  content: "\e63c";
+}
+.nav-wrap .navbox .subMenu .menuList .item.item10:before {
+  content: "\e601";
+}
+.nav-wrap .navbox .subMenu .menuList .item.item11:before {
+  content: "\e63d";
+}
+.nav-wrap .navbox .subMenu .menuList .item:hover .sub-item {
+  display: block;
+}
+.nav-wrap .navbox .subMenu .menuList .item .sub-item {
+  display: none;
+  position: absolute;
+  left: 215px;
+  top: 0;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.9);
+  background: #fff\9;
+  width: 740px;
+  height: 450px;
+  border: 1px solid #DDD;
+  overflow: auto;
+}
+.nav-wrap .navbox .subMenu .menuList .item .sub-item .sub-itemList dl {
+  padding-top: 15px;
+  font-size: 14px;
+}
+.nav-wrap .navbox .subMenu .menuList .item .sub-item .sub-itemList dl dt {
+  width: 120px;
+  text-align: center;
+}
+.nav-wrap .navbox .subMenu .menuList .item .sub-item .sub-itemList dl dt a {
+  color: #0f91ed;
+  font-weight: bold;
+}
+.nav-wrap .navbox .subMenu .menuList .item .sub-item .sub-itemList dl dd {
+  width: 560px;
+  line-height: 26px;
+}
+.nav-wrap .navbox .subMenu .menuList .item .sub-item .sub-itemList dl dd a {
+  display: inline-block;
+  color: #000;
+  border-right: 1px solid #888;
+  padding-right: 8px;
+  line-height: 14px;
+}
+.nav-wrap .navbox .subMenu .menuList .item .sub-item .sub-itemList dl dd a:hover {
+  color: #0f91ed;
+}
+/*----服务指南----*/
+.service-wrap {
+  width: 100%;
+  background: #fff;
+}
+.service-wrap .w1200 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+.serviceList {
+  width: 240px;
+  text-aling: left;
+}
+.serviceList dt {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  height: 38px;
+  line-height: 38px;
+  width: 160px;
+  margin: 0 auto;
+}
+.serviceList dt .iconfont {
+  font-size: 35px;
+  color: #004b97;
+  font-weight: normal;
+  vertical-align: sub;
+  padding-right: 5px;
+}
+.serviceList dd {
+  padding-left: 50px;
+}
+.serviceList dd p {
+  margin: 0 35px;
+}
+.serviceList dd a {
+  color: #666;
+  font-size: 13px;
+  height: 20px;
+  margin: 0 auto;
+  text-align: left;
+}
+.serviceList dd a:hover {
+  color: #0f91ed;
+}
+/*----底部----*/
+footer {
+  width: 100%;
+  background: #fff;
+}
+footer .w1200 {
+  margin-top: 0;
+  padding-bottom: 30px;
+}
+footer p {
+  width: 100%;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}
+footer p.links {
+  margin-bottom: 20px;
+}
+footer p a {
+  color: #666;
+}
+footer p i {
+  color: #0f91ed;
+  padding: 0 10px;
+}
+footer p.companyInfo a:hover {
+  color: #0f91ed;
+}
+/*-----aside 右边固定栏-----*/
+.asideRight {
+  width: 35px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #fff;
+  z-index: 999;
+  padding-top: 88px;
+  /*---app下载--*/
+  /**----右箭头---**/
+  /*-----客服-----*/
+}
+.asideRight .asideNav {
+  text-align: center;
+  border-bottom: 1px solid #ededed;
+  position: relative;
+}
+.asideRight .asideNav:hover a {
+  background: #004b97;
+  color: #fff;
+}
+.asideRight .asideNav:hover a .iconfont {
+  color: #fff;
+  -webkit-text-stroke-width: 0;
+}
+.asideRight .asideNav.customerServiceBox:hover .customerService-wrap {
+  display: block;
+}
+.asideRight .asideNav a {
+  color: #333;
+  display: block;
+  padding: 10px 0 10px;
+}
+.asideRight .asideNav .navtxt {
+  font-size: 14px;
+  display: block;
+  width: 20px;
+  line-height: 16px;
+  margin: 0 auto;
+}
+.asideRight .asideNav .navtxt i {
+  display: block;
+  line-height: 14px;
+}
+.asideRight .asideNav .iconfont {
+  font-size: 20px;
+  color: #004b97;
+}
+.asideRight .asideNav .number {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #b50202;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-left: -2px;
+  margin-top: 5px;
+}
+.asideRight .asideNav .number strong {
+  color: #fff;
+}
+.asideRight .toTop {
+  padding: 10px 0;
+  border-bottom: none;
+}
+.asideRight .toTop:hover {
+  background: #004b97;
+}
+.asideRight .toTop:hover .iconfont {
+  color: #fff;
+}
+.asideRight #APPDownload {
+  position: relative;
+}
+.asideRight #APPDownload:hover,
+.asideRight #APPDownload.active {
+  background: #004b97;
+}
+.asideRight #APPDownload:hover a,
+.asideRight #APPDownload.active a {
+  color: #fff;
+}
+.asideRight #APPDownload:hover .iconfont,
+.asideRight #APPDownload.active .iconfont {
+  color: #fff;
+  -webkit-text-stroke-width: 0;
+}
+.asideRight #APPDownload:hover .appDownloadTips-wrap,
+.asideRight #APPDownload.active .appDownloadTips-wrap {
+  display: block;
+}
+.asideRight #APPDownload .appDownloadTips-wrap {
+  display: none;
+  position: absolute;
+  right: 45px;
+  top: 22px;
+  width: 181px;
+  height: 84px;
+  padding: 7px 8px;
+  border: 1px solid #004b97;
+  background: #fff;
+  box-sizing: border-box;
+  z-index: 11000000;
+}
+.asideRight .appDownloadTips-wrap .arrowBox {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 34px;
+  right: -11px;
+}
+.asideRight .appDownloadTips-wrap .arrowBox .rightArrow1,
+.asideRight .appDownloadTips-wrap .arrowBox .rightArrow2 {
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top: 6px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid white;
+  overflow: hidden;
+}
+.asideRight .appDownloadTips-wrap .arrowBox .rightArrow1 {
+  left: 1px;
+  border-left: 8px solid #004b97;
+}
+.asideRight .appDownloadTips-wrap .arrowBox .rightArrow2 {
+  border-left: 8px solid white;
+}
+.asideRight #APPDownload .appDownloadTips .txtTips {
+  width: 52%;
+  padding-top: 12px;
+}
+.asideRight #APPDownload .appDownloadTips .txtTips .txt {
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  line-height: 21px;
+}
+.asideRight #APPDownload .appDownloadTips .txtTips .txt .iconfont {
+  color: #000;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.asideRight #APPDownload .appDownloadTips .txtTips .txt strong {
+  font-weight: normal;
+  color: #004b97;
+}
+.asideRight #APPDownload .appDownloadTips .appdownEWM {
+  width: 70px;
+  height: 70px;
+}
+.asideRight #APPDownload .appDownloadTips img {
+  display: block;
+  border-radius: 2px;
+  width: 100%;
+  height: 100%;
+}
+.asideRight .customerService-wrap {
+  position: absolute;
+  right: 45px;
+  top: 0px;
+  width: 100px;
+  height: 90px;
+  background: #cbcfd5;
+  border-radius: 6px;
+  padding: 8px 4px;
+  display: none;
+}
+.asideRight .customerService-wrap:after {
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  border-top: 8px solid transparent;
+  border-left: 10px solid #cbcfd5;
+  border-bottom: 8px solid transparent;
+  position: absolute;
+  top: 34px;
+  right: -10px;
+}
+.asideRight .customerService-wrap .customerService {
+  width: 100%;
+  height: 100%;
+  background: #f7f7f7;
+  border-radius: 6px;
+}
+.asideRight .customerService-wrap .customerService li a {
+  padding: 5px 0;
+  background: #fff;
+  color: #000;
+  border-radius: 6px;
+}
+.asideRight .customerService-wrap .customerService li a img {
+  vertical-align: middle;
+}
+.asideRight .customerService-wrap .customerService li a:hover {
+  background: #004b97;
+  color: #fff;
+}
+/*-----返回顶部 -------*/
+.toTop {
+  cursor: pointer;
+}
+.toTop .iconfont {
+  font-size: 20px;
+  color: #004b97;
+}
+/*----楼层----*/
+.stairNav {
+  position: fixed;
+  top: 25%;
+  left: 5%;
+  width: 54px;
+  display: none;
+  background: #fff;
+}
+.stairNav ul {
+  width: 100%;
+}
+.stairNav ul li {
+  width: 54px;
+  width: 32px\9;
+  height: 54px;
+  height: 32px\9;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  padding: 11px;
+  font-size: 14px;
+  color: #333;
+  line-height: 15px;
+  cursor: pointer;
+}
+.stairNav ul li.hover,
+.stairNav ul li.on,
+.stairNav ul li:hover {
+  background: #004b97;
+  border: none;
+  color: #fff;
+}
+.stairNav .toTop {
+  text-align: center;
+  width: 54px;
+  width: 38px\9;
+  height: 54px;
+  height: 38px\9;
+  border: 1px solid #ededed;
+  border-top: none;
+  padding: 8px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+.stairNav .toTop:hover {
+  background: #004b97;
+  border: none;
+}
+.stairNav .toTop:hover .iconfont {
+  color: #fff;
+}
+.stairNav .toTop .iconfont {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 24px;
+}

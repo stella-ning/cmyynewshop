@@ -1,0 +1,829 @@
+@charset "utf-8";
+@import 'var.less';
+/*-----------------------------------首页-----------------------------------*/
+
+.w1200{
+	//background:#fff;
+	position:relative;
+}
+/*---------banner-------------*/ 
+.banner-wrap{
+	width:100%;
+	.w1200{
+		margin-top:0;
+		margin-bottom:0;
+	}
+	/*--轮播图--*/
+	#banner{
+		width:100%;
+	    height:450px;
+	    .items{
+	    	li{
+	    		height:450px!important;
+	    		img{
+	    			display:block;
+	    			width:100%;
+	    			height:450px;
+	    			vertical-align: middle;
+	    		}
+	    	}
+	    }
+	}
+}
+/*---登录板块--*/ 
+.login-wrap{
+	position:relative;
+	.login{
+		width:245px;
+		height:450px;
+		position: absolute;
+		top:-450px;
+		right:0;
+		background:rgba(255,255,255,.9);
+		background: #fff\9;
+		z-index:99;
+		.partTop{
+			padding:0 10px;
+			
+		}
+		.loginForm{
+			.title{
+				width:100%;
+				height:38px;
+				line-height:38px;
+				text-align:center;
+				font-size:16px;
+				color:#333;
+			}
+			.input-group{
+				width:100%;
+				height:38px;
+				margin-bottom:10px;
+				.inputIcon{
+					font-size:18px;
+					color:#666;
+					width:38px;
+					height:38px;
+					border:1px solid #cecece;
+					text-align: center;
+					line-height:38px;
+					background: #fff;
+				}
+				.inputBox{
+					outline: none;
+					background:#fff;
+					border:1px solid #cecece;
+					padding-left:5px;
+					width:185px;
+					*width:178px;
+					border-left:0;
+					height:38px;
+					line-height:38px;
+				}
+			}
+			
+			.smallTips{
+				margin-top:2px;
+				font-size:12px;
+				.checkbox-wrap{
+					position:relative;
+					input{
+						width:15px;
+						height:15px;
+						position:absolute;
+						left:0;
+						top:4px;
+						z-index:10;
+					}
+					.checkboxIcon{
+						display:inline-block;
+						width:13px;
+						height:13px;
+						border:1px solid #b3abab;
+						border-radius:2px;
+						position:relative;
+						background:#eee;
+						.iconfont{
+							display:none;
+							position:absolute;
+							left:0;
+							top:-7px;
+							font-size:10px;
+							color:#000;
+						}
+					}
+					input:checked ~ .checkboxIcon .iconfont{
+						display:block;
+					}
+				}
+				.forget-pwd{
+					padding-right:10px;
+					a{
+						color:@colorBlue2;
+					}
+				}
+				a{
+					color:#333;
+					font-size:11px;
+					&:hover{
+						color:@colorBlue2;
+					}
+				}
+			}
+		}
+		.partBottom{
+			width:100%;
+			*width:90%;
+			text-align:center;
+			padding:0 10px;
+			margin-top:10px;
+			.partBottom-con{
+				width:100%;
+				*width:98%;
+				padding:0 4px 10px 4px;
+				border:1px solid #CECECE;
+			}
+			.title{
+				height:30px;
+				line-height:30px;
+			}
+			.tilteCode{
+				height: 30px;
+			    line-height: 30px;
+			    background-color: #F37538;
+			    color: white;
+			}
+		}
+	}
+}
+.submitBtn{
+	width:100%;
+	height:38px;
+	button{
+		border:none;
+		outline: none;
+		width:100%;
+		height:38px;
+		line-height:38px;
+		text-align:center;
+		background:@colorBlue1;
+		color:#fff;
+		font-size:18px;
+		cursor:pointer;
+	}
+}
+
+
+
+/*------------专享优惠-------------*/ 
+/*---公用模块 标题--*/ 
+.modelTitle{
+	width:100%;
+	height:50px;
+	h2{
+		color:#333;
+		font-size:26px;
+		font-weight: bold;
+		padding-left:10px;
+		img{
+			vertical-align: sub;
+		}
+		i{
+			font-weight: normal;
+			font-size:20px;
+			padding:0 10px;
+		}
+		.subTitle{
+			font-size:14px;
+			font-weight: normal;
+			strong{
+				color:#d60b1b;
+				font-size:16px;
+				padding-left:15px;
+			}
+		}
+		
+	}
+	.readMore{
+		margin-top:10px;
+		margin-right:10px;
+	}
+}
+.readMore{
+	background:@colorBlue1;
+	color:#fff;
+	font-size:14px;
+	padding: 2px 8px 2px 15px;
+    border-radius: 12px;
+    display:inline-block;
+}
+.discount-wrap{
+	.discount-con{
+		width:100%;
+		height:285px;
+		.picScroll-left .active-list:nth-child(5n) .dashed{
+			border:none;
+		}
+	}
+}
+/*----轮播图公共样式-----*/ 
+.picScroll-left{
+	position:relative;
+	width:100%;
+	height:285px;
+	overflow:hidden;
+	.arrow{
+		position:absolute;
+		top:94px;
+		z-index:10;
+		cursor: pointer;
+		display:none;
+		*width:25px;
+		*height:70px;
+		img{
+			width:80%;
+			height:80%;
+		}
+		&.prev{
+			left:5px;
+		}
+		&.next{
+			right:0;
+		}
+	}
+	.tempWrap{
+        width:100% !important;
+        overflow:hidden;
+    }
+	.picList{
+        width:1000% !important;
+    }
+    .active-list{
+        position:relative;
+        width:240px !important;
+        height:285px;
+        margin-bottom:5px;
+        margin-right:0;
+        float:left;
+        display:inline;
+        overflow:hidden;
+        text-align:center;
+        box-sizing: border-box;
+        border:1px solid transparent;
+        border-right:none;
+       	//border:1px dashed #cdcdcd;
+        &:hover{
+        	border:1px solid @colorBlue1;
+        	.dashed{
+        		border:none;
+        	}
+        }
+        a{
+            display:block;
+            width:100%;
+            height:160px;
+            img{
+            	width:auto;
+            	height:auto;
+                max-width:238px;
+                max-height:160px;
+                vertical-align: middle;
+            }
+        }
+        .product-state{
+        	padding:0;
+        	margin:5px 0;
+        	text-align:center;
+        	width:100%;
+    		.product-name{
+				font-size: 16px;
+				color:#333;
+				height:38px;
+				line-height:38px;
+				width:100%;
+				overflow:hidden;
+				white-space:nowrap;
+				text-overflow:ellipsis;
+				a{
+					color:#333;
+					&:hover{
+						color:@colorBlue2;
+					}
+				}
+    		}
+        	.product-size{
+        		font-size:14px;
+        		color:#666;
+        	}
+        }
+        .priceBox{
+			.original-price{
+				font-size:16px;
+				color:#999;
+				padding-right:6px;
+				i{
+					text-decoration: line-through;
+				}
+			}
+			.discount-price,.noLogin{
+				font-size:20px;
+				color:#e60000;
+			}
+
+        }
+        .dashed{
+        	display:inline-block;
+        	width:0px;
+        	height:178px;
+			border-left:1px dashed #cdcdcd;
+			position:absolute;
+			top:45px;
+			right:0;
+        }
+    }
+}
+
+/*-------新品上线------*/ 
+.newproducts-wrap{
+	width:100%;
+	.w1200{
+		background:#fff;
+	}
+	.newproducts-left{
+		width:240px;
+		height:285px;
+		background:url('../images/index/newproduct00.jpg') no-repeat;
+		background-size: cover;
+		position:relative;
+		a{
+			display:block;
+			width:100%;
+			height:100%;
+			border:1px solid transparent;
+			&:hover{
+				border-color:@colorBlue1;
+			}
+		}
+		.readMore{
+			position:absolute;
+			top: 65%;
+    		left: 35%;
+		}
+	}
+	.newproducts-right{
+		width:960px;
+		height:285px;
+		overflow:hidden;
+		.picList .active-list:nth-child(4n) .dashed{
+			border:none;
+		}
+	}
+}
+
+/*----活动买赠---*/ 
+.actives-wrap{
+	width:100%;
+	.modelTitle{
+		position:relative;
+		text-align:center;
+		h2{
+			text-align:center;
+			height:45px;
+			line-height:45px;
+
+			.line{
+				display:inline-block;
+				width:55px;
+				height:1px;
+				background:#2b2b2b;
+				position:absolute;
+				top:28px;
+				top:24px\9;
+				margin-left:10px;
+				&.lineLeft{
+					left: 366px;
+					left:366px\9;
+				}
+			}
+		}
+		.readMore{
+			position:absolute;
+			top:10px;
+			right:10px;
+			margin:0;
+		}
+		
+	}
+}
+.actives{
+	width:100%;
+	.active-list{
+		height:276px;
+		height:274px\9;
+		float:left;
+		margin-right:15px;
+		&.active1,&.active3{
+			width:379px;
+			width:377px\9;
+			
+			a{
+				width:379px;
+			}
+		}
+		&.active3{
+			margin-right:0;
+		}
+		&.active2{
+			width:412px;
+			width:410px\9;
+			a{
+				width:412px;
+				width:410px\9;
+			}
+		}
+		a{
+			display:inline-block;
+			height:276px;
+			height:274px\9;
+			&:hover{
+				img{
+					border-color:@colorBlue1;
+				}
+			}
+			img{
+				width:100%;
+				height:100%;
+				border:1px solid transparent;
+			}
+		}
+	}
+}
+
+/*----onsale 各种优惠活动---*/ 
+.onsale-wrap{
+	width:100%;
+	.onsale-section{
+		float:left;
+		margin-right:15px;
+		.modelTitle{
+			padding-left:25px;
+			padding-right:12px;
+			height:45px;
+			line-height:45px;
+			h2{
+				font-size:20px;
+				color:#fff;
+				height:45px;
+				.subTitle{
+					font-size:14px;
+				}
+			}
+			.readMore{
+				margin-top:10;
+				padding:0;
+				background:none;
+				height:32px;
+				line-height:28px;
+			}
+		}
+		&.sides{
+			width:379px;
+			height:422px;	
+		}
+		/*----特价优惠---*/ 
+		&.onsale-left{
+			.onsale-con{
+				.productList {
+					border-left:1px solid #ededed;	
+				}
+			}
+			
+			.modelTitle{
+				background:#6d55bd;
+				border-radius:30px 0 0 0;
+			}
+		}
+		/*-----药店常备-----*/ 
+		&.onsale-right{
+			margin-right:0;
+			.onsale-con{
+				//border-right:1px solid #ededed;
+				.onsale-productsList .active-list{
+					border-left:1px solid #ededed;
+					&:hover{
+						border-color:@colorBlue1;
+					}
+				}
+			}
+			.modelTitle{
+				background:#325bb5;
+				border-radius:0 30px 0 0;
+			}
+		}
+		/*-----高毛利区-----*/ 
+		&.onsale-center{
+			width:412px;
+			height:422px;
+			.modelTitle{
+				background:#c43d7e;
+			}
+			.highProfit-wrap{
+				width:100%;
+				height:378px;
+				background: #fff;
+				.highProfitItems{
+					width:412px;
+					height:378px;
+					_width:412px;
+					overflow:hidden;
+				}
+
+			}
+			.controlBtn{
+				width:27px;
+				width:27px\9;
+				height:100%;
+				background:rgba(216,229,230,.5);
+				background:#ebf2f2\9;
+				border-right:1px solid #fff;
+				text-align:center;
+				line-height:378px;
+				cursor:pointer;
+				float:right;
+			}
+			.open{
+				width:27px;
+				width:27px\9;
+				height:100%;
+				background:rgba(132,196,241,.96);
+				background:#8dc2f2\9;
+				text-align:center;
+				line-height:378px;
+				cursor:pointer;
+				float:right;
+				color:#fff;
+			}
+			.highProfitItem{
+				display:block;
+				width:331px;
+				width:331px\9;
+				height:378px;
+				border-left:1px solid #ededed;
+				position:relative;
+				overflow:hidden;
+				.highProfitItem-content{
+					width:330px;
+					height:100%;
+					.leftToRight,.rightToLeft{
+						width:330px;
+						border:1px solid transparent;
+						&:hover{
+							border:1px solid @colorBlue1;
+						}
+					}
+					.leftToRight{
+						border-bottom:1px solid #ededed;
+					}
+					.rightToLeft{
+						height:188px;
+						border-bottom:1px solid #ededed;
+					}
+					.productImg{
+						width:160px;
+						height:188px;
+						display: table-cell;
+	    				vertical-align: middle;
+						text-align:center;
+						a{
+							width: 160px;
+						    height: 188px;
+						    padding:5px;
+						    display: table-cell;
+						    vertical-align: middle;
+						}
+						img{
+							display:block;
+							width:auto;
+							height:auto;
+							max-width: 155px;
+							max-height: 188px;
+							vertical-align: middle;
+							margin:0 auto;
+						}
+
+					}
+					.product-info{
+						width:168px;
+						height:188px;
+						vertical-align: middle;
+						display:table-cell;
+						.product-state{
+							width:168px;
+							height:188px;
+							vertical-align: middle;
+							display:table-cell;
+							padding:0 10px;
+						}
+						.product-name{
+							font-size:16px;
+							color:#2b2b2b;
+							text-align:left;
+							a{
+								color:#2b2b2b;
+							}
+						}
+						.product-size{
+							font-size:14px;
+							color:#666;
+							text-align:left;
+						}
+						.priceBox{
+							text-align:left;
+							font-size:20px;
+							color:#e60000;
+						}
+					}
+				}
+				
+			}
+			
+		}
+	}
+	.onsale-con{
+		background: #fff;
+		/*---特价优惠左边----*/ 
+		.onsale-productsAdv{
+			width:161px;
+			height:100%;
+			.productAdv{
+				display:block;
+				width:161px;
+				height:160px;
+			}
+			.productList{
+				width:100%;
+				height:217px;
+				text-align:center;
+				border:1px solid transparent;
+				border-right: 1px solid #ededed;
+    			border-bottom: 1px solid #ededed;
+    			&:hover{
+    				border:1px solid @colorBlue1;
+    			}
+				.pic{
+					width:50%;
+					height:100%;
+					display: table-cell;
+    				vertical-align: middle;
+					text-align:center;
+					a{
+						width: 160px;
+					    height: 105px;
+					   	padding:5px;
+					    display: table-cell;
+					    vertical-align: middle;
+					}
+					img{
+						display:block;
+						width:auto;
+						height:auto;
+						vertical-align: middle;
+						margin:0 auto;
+					}
+					&.picLeft{
+						img{
+							max-width: 160px;
+							max-height: 105px;
+						}
+					}
+					
+				}
+				.product-state{
+					padding:0 15px;
+				}
+			}
+		}
+		/*---药品名称价格--*/ 
+		.product-state{
+			width:100%;
+			margin:0;
+			.product-name{
+				height:auto;
+				max-height:42px;
+				width:100%;
+				display:-webkit-box;
+				-webkit-box-orient:vertical;
+				-webkit-line-clamp:2;
+				overflow:hidden;
+				a{
+					color:#2b2b2b;
+					font-size:16px;
+				}
+				// text-align:center;
+				line-height:20px;
+			}
+			.product-size{
+				font-size:14px;
+				color:#666;
+			}
+		}
+		.priceBox .price,.noLogin{
+			font-size:20px;
+			color:#e60000;
+			margin:8px 0;
+		}
+		/*---特价优惠右边--*/ 
+		.onsale-productsList{
+			width:218px;
+			height:100%;
+			.active-list{
+				width:218px;
+				height:126px;
+				border:1px solid transparent;
+				border-right:1px solid #ededed;
+				border-bottom:1px solid #ededed;
+				&:hover{
+					border:1px solid @colorBlue1;
+				}
+				.pic{
+					width:50%;
+					height:100%;
+					display: table-cell;
+    				vertical-align: middle;
+					text-align:center;
+					a{
+						width: 109px;
+					    height: 126px;
+					    padding:5px;
+					    display: table-cell;
+					    vertical-align: middle;
+					}
+					img{
+						display:block;
+						width:auto;
+						height:auto;
+						vertical-align: middle;
+						margin:0 auto;
+					}
+					&.picRight{
+						img{
+							max-width:109px;
+							max-height:126px;
+						}
+					}
+				}
+				.product-info{
+					width:50%;
+					height:100%;
+					.product-state{
+						padding-top:15px;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+/*----热门品牌------*/ 
+.hotbrands-wrap{
+	width:100%;
+	.hotbrands{
+		width:100%;
+		border-top:1px solid #ededed;
+		background: #fff;
+		li{
+			width:200px;
+			height:100px;
+			float:left;
+			display:table-cell;
+			vertical-align: middle;
+			border:1px solid transparent;
+			border-left:1px  solid #ededed;
+			border-bottom:1px solid #ededed;
+			&:nth-child(6n){
+				border-right:1px solid #ededed;
+			}
+			&:hover{
+				border:1px solid @colorBlue1;
+			}
+			a{
+				display:table-cell;
+				width:200px;
+				height:100px;
+				vertical-align: middle;
+				margin:0 auto;
+				img{
+					display:block;
+					width:auto;
+					height:auto;
+					max-width: 100%;
+					max-height: 100%;
+					vertical-align: middle;
+					margin:0 auto;
+				}
+			}
+		}
+	}
+}
+
