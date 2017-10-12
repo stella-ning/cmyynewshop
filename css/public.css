@@ -588,22 +588,25 @@ footer p.companyInfo a:hover {
 .asideRight #APPDownload .appDownloadTips-wrap {
   display: none;
   position: absolute;
-  right: 45px;
+  right: 35px;
   top: 22px;
+  background: #fff;
+  box-sizing: border-box;
+  z-index: 11000000;
+  padding-right: 10px;
+}
+.asideRight #APPDownload .appDownloadTips-wrap .containerBox {
   width: 181px;
   height: 84px;
   padding: 7px 8px;
   border: 1px solid #004b97;
-  background: #fff;
-  box-sizing: border-box;
-  z-index: 11000000;
 }
 .asideRight .appDownloadTips-wrap .arrowBox {
   width: 12px;
   height: 12px;
   position: absolute;
   top: 34px;
-  right: -11px;
+  right: 0px;
 }
 .asideRight .appDownloadTips-wrap .arrowBox .rightArrow1,
 .asideRight .appDownloadTips-wrap .arrowBox .rightArrow2 {
