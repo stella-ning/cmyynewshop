@@ -1,0 +1,201 @@
+@charset utf-8;
+.drugStandingBody {
+  background: #81cf6b;
+}
+.topicBanner {
+  width: 100%;
+}
+.topicBanner img {
+  width: 100%;
+  height: auto;
+  max-height: 36rem;
+}
+.topicBox {
+  width: 100%;
+}
+.topicBox .w1200 {
+  background: #ebefea;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+.topicBox .topicContainer {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.topicBox .topicItem {
+  float: left;
+  width: 285px;
+  width: 261px\9;
+  *width: 261px;
+  height: 440px;
+  padding: 0 12px;
+  background: #fff;
+  border: 1px solid #fff;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.topicBox .itemCon {
+  width: 100%;
+  *width: 259px;
+}
+.topicBox .itemCon .produceImg {
+  width: 259px;
+  height: 190px;
+  vertical-align: middle;
+  display: table-cell;
+}
+.topicBox .itemCon .produceImg img {
+  width: auto;
+  height: auto;
+  max-width: 259px;
+  max-height: 190px;
+  vertical-align: middle;
+}
+.topicBox .itemCon .produceName {
+  color: #004b97;
+  clear: both;
+  border-bottom: 1px solid #ebefea;
+}
+.topicBox .itemCon .produceName .txt {
+  display: block;
+  width: 80%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #004b97;
+  *float: left;
+}
+.topicBox .itemCon .produceName .collectionBtn {
+  *float: right;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 5px;
+  padding: 0px 6px;
+  border: 1px solid #004b97;
+  margin-top: 5px;
+  border-radius: 2px;
+  line-height: 20px;
+}
+.topicBox .itemCon .produceInfo {
+  color: #666;
+  margin-top: 5px;
+}
+.topicBox .itemCon .produceInfo .infoDetail {
+  font-size: 14px;
+  line-height: 30px;
+}
+.topicBox .itemCon .produceInfo .infoDetail .weight {
+  font-size: 16px;
+}
+.topicBox .itemCon .produceInfo .infoDetail .tips {
+  color: #f20335;
+}
+.topicBox .itemCon .producePriceBox {
+  line-height: 50px;
+}
+.topicBox .itemCon .producePriceBox .producePrice {
+  color: #f20335;
+}
+.topicBox .itemCon .producePriceBox .producePrice .price {
+  font-size: 20px;
+  font-weight: bold;
+}
+.topicBox .itemCon .producePriceBox .producePrice .label {
+  font-size: 14px;
+}
+.topicBox .itemCon .producePriceBox .producePrice.outOfStock {
+  color: #666;
+}
+.topicBox .itemCon .producePriceBox .noLogin {
+  color: #666;
+  font-size: 14px;
+  clear: both;
+}
+.topicBox .itemCon .producePriceBox .noLogin .vipPrice {
+  float: left;
+}
+.topicBox .itemCon .producePriceBox .noLogin .vipPrice strong {
+  color: #f20335;
+  font-size: 16px;
+}
+.topicBox .itemCon .producePriceBox .noLogin .store {
+  vertical-align: middle;
+  height: 50px;
+  float: right;
+}
+.topicBox .itemCon .producePriceBox .noLogin .store .star {
+  vertical-align: sub;
+}
+.topicBox .itemCon .operation .count {
+  font-size: 16px;
+  color: #666;
+  line-height: 32px;
+}
+.topicBox .itemCon .operation .count .countBtn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  line-height: 30px;
+}
+.topicBox .itemCon .operation .count .countBtn:hover {
+  border-color: #004b97;
+  color: #004b97;
+}
+.topicBox .itemCon .operation .count .countBtn.add {
+  margin-right: 5px;
+}
+.topicBox .itemCon .operation .count .countInput {
+  outline: none;
+  border: none;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  width: 55px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  font-size: 18px;
+  color: #666;
+}
+.topicBox .itemCon .operation .cartBtn {
+  width: 105px;
+  height: 32px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 32px;
+}
+.topicBox .itemCon .operation .cartBtn .cart {
+  background: #004b97;
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+  *width: 105px;
+  *height: 32px;
+}
+.topicBox .itemCon .operation .cartBtn .outOfStockBtn {
+  background: #fff;
+  color: #004b97;
+  border: 1px solid #004b97;
+  display: block;
+  width: 100%;
+  height: 100%;
+  *width: 103px;
+  *height: 30px;
+}
+.topicBox .itemCon .notes {
+  width: 259px;
+  font-size: 12px;
+  color: #f20335;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 30px;
+}

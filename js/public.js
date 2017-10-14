@@ -1,4 +1,4 @@
-$(function(){
+
 	//右边二维码的显示与隐藏
 	var $APPDownload = $('#APPDownload');
 	//楼层滚动变量声明
@@ -134,11 +134,9 @@ $(function(){
 			$userName = $('#userName').val(),
 			$userPass = $('#userPass').val();
 		if(!obj){
-			console.log(12)
 			evt.preventDefault();
 			return false;
 		}else{
-			console.log(34)
 			if($userName == '' || $userPass == ''){
 				layer.msg('用户名和密码不能为空', {
 					icon : 2,
@@ -177,4 +175,3 @@ $(function(){
 			
 		}
 	});
-})

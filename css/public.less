@@ -139,7 +139,6 @@ body{
 }
 .w1200{
 	width:@w1200;
-	margin:20px auto;
 }
 /*----header 头部------*/
 .header-wrap{
@@ -604,7 +603,6 @@ footer{
 	    position:absolute;
 	    right:35px;
 	    top:22px;
-	    background:#fff;
 	    box-sizing:border-box;
 	    z-index:11000000;
 	    padding-right:10px;
@@ -613,6 +611,7 @@ footer{
 		    height:84px;
 		    padding:7px 8px;
 		    border:1px solid @colorBlue1;
+		    background:#fff;
 	    }
 	}
 	/**----右箭头---**/ 
@@ -739,9 +738,11 @@ footer{
 		width:100%;
 		li{
 			width:54px;
-			width:32px\9;
+			width:54px\9;
+			*width:32px;
 			height:54px;
-			height:32px\9;
+			height:52px\9;
+			*height:32px;
 			border:1px solid transparent;
 			border-bottom:1px solid #ededed;
 			border-left:1px solid #ededed;
@@ -751,19 +752,26 @@ footer{
 			color:#333;
 			line-height:15px;
 			cursor:pointer;
+			text-align:center;
 			&.hover,&.on,&:hover{
 				background:@colorBlue1;
 				border:none;
 				color:#fff;
+			}
+			&.grossProfit{
+				padding:11px 5px;
+				*width:44px;
 			}
 		}
 	}
 	.toTop{
 		text-align:center;
 		width:54px;
-		width:38px\9;
+		width:54px\9;
+		*width:38px;
 		height:54px;
-		height:38px\9;
+		height:52px\9;
+		*height:38px;
 		border:1px solid #ededed;
 		border-top:none;
 		padding:8px;

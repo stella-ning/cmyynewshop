@@ -5,6 +5,7 @@
 .w1200{
 	//background:#fff;
 	position:relative;
+	margin:20px auto;
 }
 /*---------banner-------------*/ 
 .banner-wrap{
@@ -554,9 +555,11 @@
 			.open{
 				width:27px;
 				width:27px\9;
+				*width:26px;
 				height:100%;
 				background:rgba(132,196,241,.96);
 				background:#8dc2f2\9;
+				*background:#8dc2f2;
 				text-align:center;
 				line-height:378px;
 				cursor:pointer;
@@ -567,10 +570,12 @@
 				display:block;
 				width:331px;
 				width:331px\9;
+				*width:330px;
 				height:378px;
 				border-left:1px solid #ededed;
 				position:relative;
 				overflow:hidden;
+				float:right;
 				.highProfitItem-content{
 					width:330px;
 					height:100%;
@@ -660,9 +665,12 @@
 				width:161px;
 				height:160px;
 			}
+
 			.productList{
 				width:100%;
+				*width:159px;
 				height:217px;
+				*height:222px;
 				text-align:center;
 				border:1px solid transparent;
 				border-right: 1px solid #ededed;
@@ -672,10 +680,12 @@
     			}
 				.pic{
 					width:50%;
+					*width:159px;
 					height:100%;
+					*height:105px;
+					margin:0 auto;
 					display: table-cell;
     				vertical-align: middle;
-					text-align:center;
 					a{
 						width: 160px;
 					    height: 105px;
@@ -687,11 +697,18 @@
 						display:block;
 						width:auto;
 						height:auto;
+						*width:160px;
+						*height:105px;
 						vertical-align: middle;
 						margin:0 auto;
 					}
 					&.picLeft{
+						a{
+							padding:0 5px;
+						}
 						img{
+							*width:160px;
+							*height:105px;
 							max-width: 160px;
 							max-height: 105px;
 						}
@@ -699,7 +716,12 @@
 					
 				}
 				.product-state{
+					*width:128px;
 					padding:0 15px;
+					text-align:center;
+					.product-name{
+						*width:128px;
+					}
 				}
 			}
 		}
@@ -709,6 +731,7 @@
 			margin:0;
 			.product-name{
 				height:auto;
+				*height:42px;
 				max-height:42px;
 				width:100%;
 				display:-webkit-box;
@@ -794,6 +817,7 @@
 		background: #fff;
 		li{
 			width:200px;
+			*width:198px;
 			height:100px;
 			float:left;
 			display:table-cell;
@@ -810,6 +834,7 @@
 			a{
 				display:table-cell;
 				width:200px;
+				*width:198px;
 				height:100px;
 				vertical-align: middle;
 				margin:0 auto;
